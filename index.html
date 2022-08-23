@@ -7,8 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles.css">
+    <!-- <link href="css/OrderForm.css" rel="stylesheet"> -->
     <title>website</title>
+    <style>
+        input[id^=Qty] {
+            width: 5em;
+        }
+
+        td:first-child {
+            width: 80px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +27,10 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <nav id="nav">
-        <h2>El.P</span></h2>
+        <h2>El.P 
+            <br>
+            <h6>reviews</h6>
+        </span></h2>
 
         <ul>
             <a href="#sales">Sales</a>
@@ -24,15 +38,22 @@
             <a href="#contacts">Contacts</a>
             <a href="#merchandise">Merchandise</a>
         </ul>
+
+        <!-- search bar -->
+
+
+
         <div class="user-input mt-3">
-            <form class="row g-3">
+            <form class="row g-3" action="https://www.google.com/search" method="get">
                 <div class="col-auto">
                     <label for="user-service" class="visually-hidden">Password</label>
-                    <input type="text" class="form-control" id="user-service" placeholder="Type here....">
+                    <input type="text" class="form-control" id="user-service" placeholder="Type here">
                 </div>
+
                 <div class="col-auto">
                     <button type="submit" class="btn btn-primary mb-3">Search</button>
                 </div>
+
             </form>
         </div>
     </nav>
@@ -41,200 +62,582 @@
     <br>
     <br>
     <br>
-    <h3>Sales</h3>
-    <div id="menu">
-        <div class="menu">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0002 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">PeriPeri Pizza</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0001 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Magharita Pizza</h5>
-                        </div>
-                    </div>
-                </div>
 
-
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0003 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Hawaiian Pizza</h5>
-                        </div>
-                    </div>
+    <!-- background -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">I
+    </div>
+    <div id="sales"></div>
+    <h3><b>Sales</b></h3>
+    <!-- sales -->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0002 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="axela-image">
+                    <h5 class="card-title"><a2>Mazda Axela</a2></h5>
                 </div>
 
+                <div id="axela">
+                    <p3>The Mazda Axela is without question one of the most superior hatchbacks in the market today. It
+                        offers the same level of luxury and refinement as its closest European rivals such as VW Golf
+                        and Audi A3 while retaining the famed reliability of Japanese cars. Its alternatively sold as
+                        the Mazda3 in markets outside Japan and globally it accounts for the bulk of Mazda's worldwide
+                        sales. It competes with the VW Golf, Audi A3, Subaru Impreza and Toyota Auris.</p3>
 
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0004 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Vegetable Pizza</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0005 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Cheese Pizza</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0006 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Chicken-Tikka Pizza</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0007 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Chicken-Tikka Pizza</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0008 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Chicken-Tikka Pizza</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0009 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Chicken-Tikka Pizza</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0010 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Chicken-Tikka Pizza</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0011 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Chicken-Tikka Pizza</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="Images/IMG-20211013-WA0012 (1).jpg" alt="pizza image">
-                        <div class="card-body">
-                            <h5 class="card-title">Chicken-Tikka Pizza</h5>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0001 (1).jpg" alt="vitz-icon">
+                </div>
+                <div class="card-body" id="vitz-image">
+                    <h5 class="card-title">Toyota vitz</h5>
+                </div>
+                <div id="vitz">
+                    <p3>The Toyota Vitz is one of the most sought small hatchbacks in the Kenyan market due to its great
+                        fuel economy, reliability, affordability and utility. The Vitz competes with established brands
+                        such as the Mazda Demio, Nissan March, Suzuki Swift and Honda Fit.</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and work
+                        flows,solicit user feedback and work with you to make sure what gets built is what
+                        is
+                        needed.</p3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0003 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="mazda-image">
+                    <h5 class="card-title">Mazda Axela</h5>
+                </div>
+
+                <div id="mazda">
+                    <p3>The Mazda Axela is ranked among the best of hatchbacks in the world with good reason. It offers
+                        a wide range of features that appeal to many buyers, be they fuel conscious urban dwellers or
+                        power hungry speed junkies. The build quality is also excellent with a spacious, well furnished
+                        interior and a sporty exterior. It competes with the Toyota Auris, Subaru Impreza, Nissan Tiida,
+                        VW Golf, and Audi A3.</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0004 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="atenza-image">
+                    <h5 class="card-title">Mazda Atenza</h5>
+                </div>
+
+                <div id="atenza">
+                    <p3>We test drove the 2012 Mazda Atenza and were so impressed with it that we ended up spending more
+                        time in it than we had intended. Without question, this is one of the most formidable cars we've
+                        driven in a while. It has the premium quality of a German car and yet as affordable as any
+                        Japanese car. It competes with the BMW 3 series, Mercedes C200, Toyota Mark X, Subaru Legacy, VW
+                        Passat and Audi A4</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0005 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="cx5-image">
+                    <h5 class="card-title">Mazda CX5</h5>
+                </div>
+
+                <div id="cx5">
+                    <p3>The Mazda CX-5 is arguably the most common compact SUV in the Kenyan market thanks to its great
+                        fuel efficiency, design, great handling, and practicability. It strikes a perfect balance
+                        between elegance and brawn which appeals to both a masculine and feminine clientele. It competes
+                        with established brands such as the Nissan X-Trail, Subaru Forester, Toyota Rav-4, Honda CR-V,
+                        Mitsubishi Outlander, and the VW Tiguan.</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0006 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="demio-image">
+                    <h5 class="card-title">Mazda Demio</h5>
+                </div>
+
+                <div id="demio">
+                    <p3>The Mazda Demio is one of the most sought hatchbacks in Kenya and is loved due to its
+                        affordability, reliability, and great fuel efficiency. It competes with established brands such
+                        as the Toyota Vitz, Honda Fit, VW Polo, and Nissan Note.</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0007 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="subaru-image">
+                    <h5 class="card-title">Subaru Forester</h5>
+                </div>
+
+                <div id="subaru">
+                    <p3>The Subaru Forester has established itself as one of the most sought all-wheel-drive SUVs
+                        transcending most of its rivals such as the Mazda CX-5, Honda CR-V, Toyota RAV4, and Jeep Grand
+                        Cherokee. The Subaru Forester has been in production since 1997 and is in its 5th generation.
+                    </p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0008 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="impreza-image">
+                    <h5 class="card-title">Subaru Impreza</h5>
+                </div>
+
+                <div id="impreza">
+                    <p3>The fourth generation Subaru Impreza entered the market in late 2011 and brought about major
+                        changes to the once slow and thirsty car. With the introduction of new engines, a lightweight
+                        body and improved aerodynamics, it gained more power and better fuel economy which put it in a
+                        position to seriously compete with its rivals. These include the Toyota Auris, Mazda Axela, VW
+                        Golf, Audi A3, Mitsubishi Galant Fortis and the Nissan Tiida. The WRX STI is a separate car that
+                        is not part of the lineup and it targets an entirely different demographic.</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0009 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="impreza2-image">
+                    <h5 class="card-title">Subaru Impreza</h5>
+                </div>
+
+                <div id="impreza2">
+                    <p3>The fourth generation Subaru Impreza entered the market in late 2011 and brought about major
+                        changes to the once slow and thirsty car. With the introduction of new engines, a lightweight
+                        body and improved aerodynamics, it gained more power and better fuel economy which put it in a
+                        position to seriously compete with its rivals. These include the Toyota Auris, Mazda Axela, VW
+                        Golf, Audi A3, Mitsubishi Galant Fortis and the Nissan Tiida. The WRX STI is a separate car that
+                        is not part of the lineup and it targets an entirely different demographic.</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0010 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="axio-image">
+                    <h5 class="card-title">Toyota Axio</h5>
+                </div>
+
+                <div id="axio">
+                    <p3>With the ever rising fuel costs, the Toyota Axio is one of the most appropriate mid-sized
+                        saloons to own. It's got an economical 1.5L engine and a spacious interior that can comfortably
+                        seat five adults. It's also cheap to maintain and has minimal reliability issues.</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0011 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="allion-image">
+                    <h5 class="card-title">Toyota Allion</h5>
+
+                </div>
+
+                <div id="allion">
+                    <p3>The Toyota Allion replaced the Toyota Carina, causing dismay to admirers who cherished Carina's
+                        athletic charm. The Allion's exquisite design and functionality have gradually won them over
+                        with time. It also has a competitive advantage in the Kenyan market due to its low maintenance
+                        costs and readily available spare parts. It competes against the Mazda Atenza, the Nissan
+                        Sylphy, the Volkswagen Passat, the Audi A4, the Subaru Legacy, and the Mercedes C180.</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-2">
+                <div>
+                    <img class="card-img-top" src="Images/IMG-20211013-WA0012 (1).jpg" alt="car image">
+                </div>
+                <div class="card-body" id="harrier-image">
+                    <h5 class="card-title">Toyota Harrier</h5>
+                </div>
+
+                <div id="harrier">
+                    <p3>With the introduction of the third generation in December 2013 the Toyota Harrier was decoupled
+                        from the Lexus RX and they are now separate entities. The Harrier has undergone extensive
+                        changes with the most notable being the futuristic frontal redesign. The driving dynamics have
+                        also changed significantly with the introduction of a 2.0 Litre powerplant.</p3>
+                    <p3>Throughout your project,our designers create and implement visual design and
+                        work
+                        flows,solicit user feedback and work with you to make sure what gets built is
+                        what is
+                        needed.</p3>
+
+                </div>
+
+            </div>
+        </div>
+
     </div>
-    <h3>Services</h3>
-    <h3>Contacts</h3>
-    <!-- contact us box -->
-    <div class="background">
+    <br>
+    <br>
+    <br>
+    <div id="services"></div>
+    <h3><b>Services</b></h3>
+    <p4>
+        El.p Reviews is an online marketplace, that helps you buy modern enthusiast cars by sourcing them for you.
+        That means pretty much anything that’s cool from the 1980s, 1990s, 2000s, 2010s, or 2020s. To us, “cool” ranges from the
+        obvious (a Ferrari F355 or a Lamborghini Gallardo) to the esoteric (a pristine Dodge Dakota Convertible or a
+        Mercury Capri XR2) to the traditional fun cars that enthusiasts love (a Mazda MX-5 Miata or a Porsche 911).
+        Basically everything that’s exciting, fun, interesting, or quirky is welcome here – as long as it comes from the
+        modern era.
+        We also help source for car parts for our clients and also do car reviews on Youtube. You can find the Youtube link below.
+    </p4>
+    <br>
+    <br>
+    <br>
+    <div id="contacts"></div>
+    <h3><b>Contact Us</b></h3>
+    <section id="contact">
+
+        <!-- <h1 class="section-header">Contact</h1> -->
+
+        <div class="contact-wrapper">
+            <form action="https://formsubmit.co/officiallyel.p@gmail.com" method="POST">
+                <form id="contact-form" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"
+                                value="" required>
+                        </div>
+                    </div>
+
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+                    <button class="btn btn-primary send-button" id="submit" type="submit" onclick="totalAmount()"
+                        value="SEND">
+                        <div class="alt-send-button">
+                            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                        </div>
+
+                    </button>
+                </form>
+            </form>
+
+            <!-- Left contact page -->
+
+            <div class="direct-contact-container">
+
+                <ul class="contact-list">
+                    <li class="list-item"><i class="map-marker"><span class="contact-text place">
+                               <a1 href="" title="location">Nairobi,Kenya</a1></span></i></li>
+
+                    <li class="list-item"><i class="phone"><span class="contact-text phone">
+                                <a1 href="" title="Give me a call">+254719490551</a>
+                            </span></i></li>
+
+                    <!-- <div id="contact-us">
+                        <img src="Images/emailicon.webp"> -->
+                    <li class="list-item"><i class="mail"><span class="contact-text gmail">
+                                <a1 href="" title="Send me an email">officiallyel.p@gmail.com</a>
+                            </span></i></li>
+
+                </ul>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <br>
+
+    <div id="merchandise">
+
+        <div id="order">
+            <h3><b>Merchandise</b></h3>
+        </div>
+        <!-- form -->
         <div class="container">
-            <div class="screen">
-                <div class="screen-header">
-                    <div class="screen-header-left">
-                        <div class="screen-header-button close"></div>
-                        <div class="screen-header-button maximize"></div>
-                        <div class="screen-header-button minimize"></div>
-                    </div>
-                    <div class="screen-header-right">
-                        <div class="screen-header-ellipsis"></div>
-                        <div class="screen-header-ellipsis"></div>
-                        <div class="screen-header-ellipsis"></div>
-                    </div>
-                </div>
-                <div class="screen-body">
-                    <div class="screen-body-item left">
-                        <div class="app-title">
-                            <span>CONTACT</span>
-                            <span>US</span>
-                        </div>
-                        <!-- <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div> -->
-                    </div>
-                    <div class="screen-body-item">
-                        <div class="app-form">
-                            <div class="app-form-group">
-                                <input class="app-form-control" placeholder="NAME">
-                            </div>
-                            <div class="app-form-group">
-                                <input class="app-form-control" placeholder="EMAIL">
-                            </div>
-                            <div class="app-form-group">
-                                <input class="app-form-control" placeholder="CONTACT NO">
-                            </div>
-                            <div class="app-form-group message">
-                                <input class="app-form-control" placeholder="MESSAGE">
-                            </div>
-                            <div class="app-form-group buttons">
-                                <button class="app-form-button">CANCEL</button>
-                                <button class="app-form-button">SEND</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="credits">
-                inspired by
-                <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
-                    <svg class="dribbble" viewBox="0 0 200 200">
-                        <g stroke="#ffffff" fill="none">
-                            <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
-                            <path
-                                d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345"
-                                stroke-width="20"></path>
-                            <path
-                                d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951"
-                                stroke-width="20"></path>
-                            <path
-                                d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103"
-                                stroke-width="20"></path>
-                        </g>
-                    </svg>
-                    Gururaj -->
-                </a>
-            </div>
+            <form action="https://formsubmit.co/ephieadhiambo01@gmail.com" method="POST">
+                <table border="3">
+                    <tr>
+                        <th>
+                            <p2>Item</p2>
+                        </th>
+                        <th>
+                            <p2>Image</p2>
+                        </th>
+                        <th>
+                            <p2>Colour</p2>
+                        </th>
+                        <th>
+                            <p2>Quantity</p2>
+                        </th>
+                        <th>
+                            <p2>Price</p2>
+                        </th>
+                        <th>
+                            <p2>Total</p2>
+                        </th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <p2>T Shirt</p2>
+                        </td>
+                        <td><img src="Images/merchandise tshirt.jpg" alt="T-Shirt"></td>
+                        <td><select name="Colour" id="colour">
+                                <option> Colour</option>
+                                <option value="black-tshirt">Black</option>
+                                <option value="green-tshirt">Green</option>
+                        </td>
+                        <td><input type="text" placeholder="0" min="1" id="QtyB"></td>
+                        <td>Ksh1200</td>
+
+                        <td id="TotalB"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p2>Hoodie</p2>
+                        </td>
+                        <td><img src="Images/merchandise hoodie.jpg" alt="Hoodie"></td>
+                        <td><select name="Colour" id="colour">
+                                <option> Colour</option>
+                                <option value="black-hoodie">Black</option>
+                                <option value="green-hoodie">Green</option>
+                        </td>
+                        <td><input type="text" placeholder="0" min="1" id="QtyC"></td>
+                        <td>Ksh2500</td>
+
+                        <td id="TotalC"></td>
+                    </tr>
+                    <tr>
+                        <br>
+                        <td> Total = </td>
+
+                        <td id="grandTotal" colspan="4"></td>
+                    </tr>
+                    <br>
+
+                </table>
+
+
+                <input type="button" value="Get Grand Total">
+                <input type="reset" value="Reset">
+                <br>
+                <!-- <form action="https://formsubmit.co/your@email.com" method="POST"> -->
+                <input type="text" name="name" placeholder="Description of Your Order" required>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <button type="submit">Order</button>
+
+
+            </form>
         </div>
-    </div>
-    <h3>Merchandise</h3>
+        <!-- </div> -->
+        <script>
+            // Get references to the HTML elements that you'll be working with
+            // var qtyBoxA = document.getElementById('QtyA');
+            var qtyBoxB = document.getElementById('QtyB');
+            var qtyBoxC = document.getElementById('QtyC');
+
+            // var totBoxA = document.getElementById('TotalA');
+            var totBoxB = document.getElementById('TotalB');
+            var totBoxC = document.getElementById('TotalC');
+
+            var grandTot = document.getElementById('grandTotal');
+            var btnGetTot = document.querySelector("input[type=button]");
+            var btnReset = document.querySelector("input[type=reset]");
+
+            // Set up event handling in JavaScript, not HTML.
+            // qtyBoxA.addEventListener("change", calc);
+            qtyBoxB.addEventListener("change", calc);
+            qtyBoxC.addEventListener("change", calc);
+            btnGetTot.addEventListener("click", getGrandTotal);
+            btnReset.addEventListener("click", reset);
+
+            var gt = null; // Will hold the grand total
+
+            function calc() {
+
+                // var priceA = 3;
+                var priceB = 1200;
+                var priceC = 2500;
+                gt = 0;
+
+                // Convert the values in the quantity textboxes to numbers. The 10 that
+                // is being passed as the second argument indicates the "radix" or the
+                // numeric base system that should be used when the string is being 
+                // interpreted. Here (and often), we work in the base 10 numeral system.
+                // var qtyA = parseInt(qtyBoxA.value, 10);
+                var qtyB = parseInt(qtyBoxB.value, 10);
+                var qtyC = parseInt(qtyBoxC.value, 10);
+
+                // If each of the quantity fields are not empty, calculate the price * quantity
+                // for that row, place the answer in that row's total field and add the answer
+                // to the grand total
+                // NOTE: You had semicolons like this: if(); {}, which is incorrect.
+                // NOTE: Notice that there are + signs right in front of the total box references?
+                //       this forces a conversion of the string in the text to a number. Since we
+                //       just put a number into the cell, we know for sure it can be converted.
+                // NOTE: If parseInt() can't parse a number from the string provided, it returns NaN
+                //       (Not A Number), we can check to see if we got NaN with the isNaN() function
+                //       and here, we want to know if we don't have a NaN, so we prepend a ! to it 
+                //       (the logical NOT operator) to test the opposite of the isNaN() function result.
+                // if (!isNaN(qtyA)) { totBoxA.textContent = qtyA * priceA; gt += +totBoxA.textContent; }
+                if (!isNaN(qtyB)) { totBoxB.textContent = qtyB * priceB; gt += +totBoxB.textContent; }
+                if (!isNaN(qtyC)) { totBoxC.textContent = qtyC * priceC; gt += +totBoxC.textContent; }
+
+                grandTot.textContent = gt.toFixed(2); // Just place the answer in an element as its text
+
+            }
+
+            function getGrandTotal() {
+                calc(); // Make sure all values are up to date
+                alert(gt);
+                // alert("Thank you for making an order");
+                // if (grandTotal !== "0") {
+                //     alert("select a choice!")
+                // }
+            };
+
+
+
+
+
+            function reset() {
+
+                totBoxB.textContent = "";
+                totBoxC.textContent = "";
+                grandTot.textContent = "";
+            }
+        </script>
+        <br>
+        <br>
+        <!-- footer -->
+        <div class="footer-container">
+            <br>
+            <br>
+            <a href="https://www.youtube.com/c/ELP_Official" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/c/ELP_Official" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/el.p_official/" class="fa fa-instagram"></a>
+            <br>
+            <br>
+            <!-- <div class="copyright">&copy;COPYRIGHT 2022</div> -->
+
+        </div>
+
+
+
+
+
+
+
 
 
 </body>
